@@ -6,51 +6,64 @@ text@text.com
 
 regexr.com
 
-* g ---> global
-* i ---> case insensitive, default case sensitive
-* m ---> multiline
-* s ---> single line
-* u ---> unicode
-* y ---> sticky
-* , ---> many or mutiple
+* g - global
+* i - case insensitive, default case sensitive
+* m - multiline
+* s - single line
+* u - unicode
+* y - sticky
+*  many or mutiple
 
-* /character or number/ ---> Select Character or number for matching
-* . ---> any character
-* * ---> (Match 0 or more of preceding token)
-* ? ---> (match 0 or 1 of preceding token)
-* + ---> (match 1 or more of preceding token)
-* \. ---> (escaping with .)
-* () ---> grouping
-* (){number,} ---> match any group number
-* / anything | anything / ---> or
-* /\d/i ---- /\d{5}i ----> Matching digit
-* /\D/gi ----> Do not match any digit
-* /\w/gi ----> word, number, _ matching
-* /\W/gi ----> Do not match word, number, _
-* /\s/gi ----> space, tabs, line break matching
-* /\S/gi ----> Do not match space, tabs, line break
-* /[]/gi -----> Range, Matching range
-* /[a-z]/gi ----> Matching range a to z
-* /[a-zA-Z0-9_]/gi ----> Matching range a to z, A to Z, 0 to 9 & _
+---
+
+* /character or number/ - Select Character or number for matching
+* . - any character
+* * - (Match 0 or more of preceding token)
+* ? - (match 0 or 1 of preceding token)
+* + - (match 1 or more of preceding token)
+* \. - (escaping with .)
+* () - grouping
+* (){number,} - match any group number
+* / anything | anything / - or
+* /\d/i - Matching digit
+* /\d{5}i - Matching digit with specific quantity
+* /\D/gi - Do not match any digit
+* /\w/gi - word, number, _ matching
+* /\W/gi - Do not match word, number, _
+* /\s/gi - space, tabs, line break matching
+* /\S/gi - Do not match space, tabs, line break
+* /[]/gi - Range, Matching range
+* /[a-z]/gi - Matching range a to z
+* /[a-zA-Z0-9_]/gi - Matching range a to z, A to Z, 0 to 9 & _
+
+---
 
 * /[a-zA-Z0-9_]{6}/gi
 * /[a-z0-9_]{3}/gi
 * /[A-Z_]{7}/gi
 * /[0-9_]{2}/gi
-* /[\w]{4}/gi  ----> Matching range flexible character and quantity
+* /[\w]{4}/gi  - Matching range flexible character and quantity
+
+---
 
 * /[^\w]/gi ----> Not Word
 * /[\W]/gi ----> Word
 
+---
+
 * /[^\D]/gi ----> not Digit 
 * /[0-9]/gi ----> 0 - 9 digit
 * /[\D]/gi ----> all Digit
+
+---
 
 * /yy(xx)\2zz/gim ----> capturing group in middle of the word
 * /yy(xx)(mm)\1\2/gim ----> capturing multiple group in middle of the word
 * /xxx(mm)?yy/gi ----> optional grouping 
 * /XXX(?=gg)/gim ----> exact look like group matching
 * /xx(?!gg)/gim ----> select not exact look like group matching
+
+---
 
 * /a.+b/im ----> select all total in between a and b 
 * /a.+?b/im ----> 
