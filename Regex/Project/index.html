@@ -10,19 +10,15 @@
 </head>
 <body>
 
-    <header>
-        <div id="success" class="alert alert-success alert-dismissible fade" role="alert">
-            <strong>Success!</strong> Your form has been successfully submitted
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
+    <header class="container">
+        <div id="success" class="alert alert-success alert-dismissible" role="alert">
+          <strong>That's Great</strong> You just submitted everything perfectly! 
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         
-        <div id="failure" class="alert alert-danger alert-dismissible fade" role="alert">
-            <strong>Error!</strong> Your form has not been sent due to errors
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
+        <div id="failure" class="alert alert-danger alert-dismissible" role="alert">
+          <strong>Shit!</strong> There's is something wrong in the form! 
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
     </header>
 
@@ -38,7 +34,7 @@
               <label for="fname" class="form-label">First name</label>
               <input type="text" class="form-control" id="fname" value="" placeholder="Your First Name" required>
                 <div class="invalid-feedback">
-                    Please Enter your name
+                    Please Enter your valid first name
                 </div>
                 <div class="valid-feedback">
                     Looks good!
@@ -48,49 +44,67 @@
             <div class="col-md-6">
               <label for="lname" class="form-label">Last name</label>
               <input type="text" class="form-control" id="lname" value="" placeholder="Your Last Name" required>
-              <div class="valid-feedback">
-                Perfect! 
-              </div>
+                <div class="invalid-feedback">
+                  Please Enter your valid last name
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
             </div>
 
             <div class="col-md-6">
               <label for="email" class="form-label">Your Email Address</label>
               <input type="email" class="form-control" id="email" value="" placeholder="Your email Address" required>
-              <div class="valid-feedback">
-                That's legit
-              </div>
+                <div class="invalid-feedback">
+                  Please Enter your valid email address
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
             </div>
 
             <div class="col-md-6">
               <label for="phone" class="form-label">Your Phone Number</label>
               <input type="tel" class="form-control" id="phone" value="" placeholder="Your phone number" required>
-              <div class="valid-feedback">
-                That's correct
-              </div>
+                <div class="invalid-feedback">
+                  Please Enter your valid phone number
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
             </div>
 
             <div class="col-md-12">
               <label for="phone" class="form-label">Website Name</label>
               <input type="url" class="form-control" id="url" value="" placeholder="Website name" required>
-              <div class="valid-feedback">
-                That's okay
-              </div>
+                <div class="invalid-feedback">
+                  Please Enter your valid web address and add only www before address.
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
             </div>
             
             <div class="col-md-6">
               <label for="validationCustom03" class="form-label">City</label>
               <input type="text" class="form-control" id="city" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
-              </div>
+                <div class="invalid-feedback">
+                  Please Enter your valid City Name
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
             </div>
             
             <div class="col-md-6">
               <label for="zip" class="form-label">Zip</label>
               <input type="number" class="form-control" id="zip" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
-              </div>
+                <div class="invalid-feedback">
+                  Please Enter your valid Zip Code
+                </div>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
             </div>
             
             <!-- <div class="col-12">
@@ -107,9 +121,6 @@
             
             <div class="col-3">
               <button class="btn btn-primary" type="submit" id="submit">Submit form</button>
-            </div>
-
-            <div class="alert" role="alert" id="alert">
             </div>
         </form>
     </main>
